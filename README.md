@@ -100,7 +100,7 @@ To ensure a structured development process, I used **Notion** to manage the proj
 - **Task Tracking:** Managing daily tasks and debugging logs.
 - **Technical Documentation:** Maintaining a detailed data catalog and transformation logic notes.
 
-View my full Project Roadmap on Notion:** [Project Workspace & Documentation](https://www.notion.so/Data-Warehouse-Project-2decddea693580e69b3dc8c9c27d5884?source=copy_link)
+View my full Project Roadmap on Notion: [Project Workspace & Documentation](https://www.notion.so/Data-Warehouse-Project-2decddea693580e69b3dc8c9c27d5884?source=copy_link)
 
 ---
 ## How to Get Started
