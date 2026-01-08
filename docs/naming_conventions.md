@@ -9,12 +9,29 @@ To maintain consistency, readability, and scalability across the Data Warehouse,
 - Reserved Words: Standard SQL reserved words are avoided for object names.
 
 ## 2. Table & Schema Naming
-- The warehouse is organized into three schemas: bronze, silver, and gold.
-- Bronze & Silver Layers: Tables follow the pattern <source_system>_<original_entity_name>.
-- Examples: crm_cust_info, erp_loc_a101, crm_sales_details.
-- Gold Layer: Tables/Views use business-aligned names with category prefixes:
-- dim_ for Dimensions (e.g., gold.dim_customers, gold.dim_products).
-- fact_ for Fact tables (e.g., gold.fact_sales).
+### **Bronze Rules**
+- All names must start with the source system name, and table names must match their original names without renaming.
+- **`<sourcesystem>_<entity>`**  
+  - `<sourcesystem>`: Name of the source system (e.g., `crm`, `erp`).  
+  - `<entity>`: Exact table name from the source system.  
+  - Example: `crm_customer_info` → Customer information from the CRM system.
+
+### **Silver Rules**
+- All names must start with the source system name, and table names must match their original names without renaming.
+- **`<sourcesystem>_<entity>`**  
+  - `<sourcesystem>`: Name of the source system (e.g., `crm`, `erp`).  
+  - `<entity>`: Exact table name from the source system.  
+  - Example: `crm_customer_info` → Customer information from the CRM system.
+
+### **Gold Rules**
+- All names must use meaningful, business-aligned names for tables, starting with the category prefix.
+- **`<category>_<entity>`**  
+  - `<category>`: Describes the role of the table, such as `dim` (dimension) or `fact` (fact table).  
+  - `<entity>`: Descriptive name of the table, aligned with the business domain (e.g., `customers`, `products`, `sales`).  
+  - Examples:
+    - `dim_customers` → Dimension table for customer data.  
+    - `fact_sales` → Fact table containing sales transactions.  
+
 
 ## 3. Column Naming Standards
 - Surrogate Keys: Primary keys in the Gold layer use the suffix _key to distinguish them from source system IDs.
