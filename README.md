@@ -16,8 +16,7 @@ Gold Layer: Dimensional modeling (Star Schema) using Views to create a "Single S
 
 ## High Level Architecture
 
-<img width="921" height="621" alt="High-Level-Architecture" src="https://github.com/user-attachments/assets/1908fd12-5bad-4e02-b390-85c1b6da412d" />
-
+<img width="938" height="591" alt="High-Level-Architecture" src="https://github.com/user-attachments/assets/a2e4bfa5-ab1b-4ad8-8143-1f2f0644d6a9" />
 
 ---
 ## Tools & Technologies
