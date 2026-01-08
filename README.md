@@ -8,13 +8,15 @@ Following the Medallion Architecture, I integrated data from two source systems 
 
 The architecture follows a modular Bronze, Silver, and Gold approach, ensuring data quality and traceability at every stage:
 
-**
-
 Bronze Layer: Raw data ingestion from CSV files using BULK INSERT.
 
 Silver Layer: Data cleansing, standardization (Gender, Marital Status, Country names), and handling of invalid/null values.
 
 Gold Layer: Dimensional modeling (Star Schema) using Views to create a "Single Source of Truth."
+
+## High Level Architecture
+
+<img width="921" height="621" alt="High-Level-Architecture" src="https://github.com/user-attachments/assets/55163c87-b280-4bee-b85b-78bf965e8305" />
 
 ---
 ## Tools & Technologies
