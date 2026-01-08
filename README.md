@@ -94,6 +94,15 @@ To ensure the reliability of the warehouse, I developed a testing framework loca
 - Standardization: Validating that all gender and marital status codes were correctly mapped.
 
 ---
+## Project Management & Documentation
+To ensure a structured development process, I used **Notion** to manage the project lifecycle. This included:
+**Project Roadmap:** Tracking milestones from database setup to Gold layer modeling.
+**Task Tracking:** Managing daily tasks and debugging logs.
+**Technical Documentation:** Maintaining a detailed data catalog and transformation logic notes.
+
+View my full Project Roadmap on Notion:** [Project Workspace & Documentation](https://www.notion.so/Data-Warehouse-Project-2decddea693580e69b3dc8c9c27d5884?source=copy_link)
+
+---
 ## How to Get Started
 1. Clone the repository.
 2. Run /scripts/init_database.sql.
