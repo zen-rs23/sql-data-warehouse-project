@@ -63,17 +63,17 @@ data-warehouse-project/
 ---
 ## Challenges Faced & Solutions
 
-- Data Inconsistency across Systems: * Challenge: The CRM and ERP systems used different formats for Gender (e.g., 'M/F' vs 'Male/Female') and Country names.
+Data Inconsistency across Systems: Challenge: The CRM and ERP systems used different formats for Gender (e.g., 'M/F' vs 'Male/Female') and Country names.
 
-Solution: Implemented a mapping logic in the Silver layer using CASE statements to standardize all attributes before they reached the Gold layer.
+- Solution: Implemented a mapping logic in the Silver layer using CASE statements to standardize all attributes before they reached the Gold layer.
 
-- Dirty Data & Outliers: * Challenge: Encountered birthdates from the year 1900 and missing values in critical fields.
+Dirty Data & Outliers: Challenge: Encountered birthdates from the year 1900 and missing values in critical fields.
 
-Solution: Applied data quality filters (e.g., bdate < '1924-01-01') and used COALESCE to merge attributes from multiple sources, ensuring a complete profile for each customer.
+- Solution: Applied data quality filters (e.g., bdate < '1924-01-01') and used COALESCE to merge attributes from multiple sources, ensuring a complete profile for each customer.
 
-- Performance vs. Traceability: * Challenge: Ensuring the ETL process was repeatable and observable.
+Performance vs. Traceability: Challenge: Ensuring the ETL process was repeatable and observable.
 
-Solution: Modularized the entire pipeline into Stored Procedures with built-in logging (start_time, end_time, duration) to track performance and success.
+- Solution: Modularized the entire pipeline into Stored Procedures with built-in logging (start_time, end_time, duration) to track performance and success.
 
 ---
 ## Quality Assurance
@@ -95,5 +95,5 @@ To ensure the reliability of the warehouse, I developed a testing framework loca
 
 ---
 ## Connect with Me
-LinkedIn: 
-GitHub:
+LinkedIn: linkedin.com/in/rohit-sharma-531a7416a/
+GitHub: https://github.com/zen-rs23
